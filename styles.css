@@ -1,0 +1,122 @@
+
+/* --dun: #dbcfb0ff;
+--ash-gray: #bfc8adff;
+--ultra-violet: #545775ff;
+--cambridge-blue: #90b494ff;
+--slate-gray: #718f94ff; */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
+    background-color: white;
+    min-height: 100%;
+}
+.container{
+    height: 100vh;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+a{
+    color: #dbcfb0ff;
+}
+h1{
+    padding: 15px;
+    margin: 0;
+    font-size: 5em;
+}
+h2{
+    padding: 10px;
+    margin: 0;
+    font-size: 3em;
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+p{
+    padding: 1.5em;
+    font-size: 1.5em;
+}
+.top{
+    background: url(images/leavesBg.jpg); 
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    max-width:100%;
+    color: white;
+}
+.top-menu{
+    width: 100%;
+    height: fit-content;
+    
+}
+#top-text{
+    padding: 40px;
+    text-align: center;
+}
+#spotlight {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at 50% 50%, #00000000 10px, #000000ee 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+span{
+    color: #90b494;
+}
+#main-menu{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;
+    padding: 1em 0;
+    width: 100%;
+    background-color:#3a4747;
+    opacity: 1;
+}
+.menu{
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+}
+#bottom{
+    background: url(images/bottomBg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#about{
+    margin: 4em auto 1em;
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#work{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+}
+.section{
+    width: 80%;
+    height: 70%;
+    background-color: #545775;
+    padding: 1.5em;
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+}
