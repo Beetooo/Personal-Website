@@ -51,7 +51,6 @@ p{
 .top-menu{
     width: 100%;
     height: fit-content;
-    
 }
 #top-text{
     padding: 40px;
@@ -112,11 +111,47 @@ span{
     justify-content:flex-end;
     align-items: center;
 }
-.section{
+.wrapper{
     width: 80%;
     height: 70%;
-    background-color: #545775;
-    padding: 1.5em;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+}
+.section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transform: translateY(100%);
+    transition: transform 0.5s ease;
+}
+.section.show {
+    transform: translateY(0);
+}
+
+.section.hide {
+    transform: translateY(100%);
+}
+.description{
+    background-color: white;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3a4747;
+}
+img{
+    max-height: 80%;
+    max-width: 80%;
+    
+}
+video{
+    width: 80%;
+    aspect-ratio: 4/3;
 }
