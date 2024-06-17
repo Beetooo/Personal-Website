@@ -25,12 +25,12 @@ a{
 h1{
     padding: 15px;
     margin: 0;
-    font-size: 5em;
+    font-size: 5vw;
 }
 h2{
     padding: 10px;
     margin: 0;
-    font-size: 3em;
+    font-size: 2.5vw;
     text-align: center;
 }
 li{
@@ -38,7 +38,7 @@ li{
 }
 p{
     padding: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.3vw;
 }
 .top{
     background: url(images/leavesBg.jpg); 
@@ -96,7 +96,7 @@ span{
 #about{
     margin: 4em auto 1em;
     width: 80%;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
