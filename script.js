@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const workSection = document.getElementById('work');
     
     window.addEventListener('wheel', (event) => {
-        if (workSection.getBoundingClientRect().top==0) {
+        if (workSection.getBoundingClientRect().top<100) {
             if (event.deltaY > 0) {
                 // Scroll down
                 if (currentProject < projects.length - 1) {
