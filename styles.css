@@ -128,7 +128,7 @@ span{
     display: grid;
     grid-template-columns: 1fr 1fr;
     transform: translateY(100%);
-    transition: transform 0.5s ease;
+    transition: transform 0.8s ease;
 }
 .section.show {
     transform: translateY(0);

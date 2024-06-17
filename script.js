@@ -38,33 +38,44 @@ function scrollFunction() {
 }
 
 //project slideshow effect
+isScrolling=false
 document.addEventListener('DOMContentLoaded', () => {
     const projects = document.querySelectorAll('.section');
     let currentProject = 0;
     const workSection = document.getElementById('work');
-    
     window.addEventListener('wheel', (event) => {
-        if (workSection.getBoundingClientRect().top<100) {
+        
+        if (workSection.getBoundingClientRect().top<50) {
             if (event.deltaY > 0) {
                 // Scroll down
                 if (currentProject < projects.length - 1) {
                     event.preventDefault();
+                    if (isScrolling){
+                        return
+                    }
+                    isScrolling=true
                     projects[currentProject].classList.remove('show');
                     projects[currentProject].classList.add('hide');
                     currentProject++;
                     projects[currentProject].classList.remove('hide');
                     projects[currentProject].classList.add('show');
+                    setTimeout(() => { isScrolling = false; }, 700);
                 }
             } else {
                 // Scroll up
                 console.log(currentProject)
                 if (currentProject > 0) {
                     event.preventDefault();
+                    if (isScrolling){
+                        return
+                    }
+                    isScrolling=true
                     projects[currentProject].classList.remove('show');
                     projects[currentProject].classList.add('hide');
                     currentProject--;
                     projects[currentProject].classList.remove('hide');
                     projects[currentProject].classList.add('show');
+                    setTimeout(() => { isScrolling = false; }, 700);
                 }
             }
         } 
