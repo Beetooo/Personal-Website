@@ -1,17 +1,11 @@
 
-/* --dun: #dbcfb0ff;
---ash-gray: #bfc8adff;
---ultra-violet: #545775ff;
---cambridge-blue: #90b494ff;
---slate-gray: #718f94ff; */
-
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', Geneva, Verdana, sans-serif;
     background-color: white;
-    min-height: 100%;
+    height: 100%;
 }
 .container {
     height: 100vh;
@@ -113,11 +107,10 @@ span {
     height: 70%;
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     overflow: hidden;
     position: relative;
 }
+
 .section {
     width: 100%;
     height: 100%;
@@ -149,4 +142,10 @@ img {
 video {
     width: 80%;
     aspect-ratio: 4/3;
+}
+@media (max-width: 768px) {
+    .section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
