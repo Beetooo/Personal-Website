@@ -1,0 +1,1 @@
+Personal Website Project. Still very much in progress, there are a few more details I would like to add and it also needs to be fixed for mobile browsers. Trying to experiment with a bit more javascript and animations.
